@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    
+}
+
+.container {
+    /* max-width: 800px; */
+    width: 70%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+input[type="text"] {    
+    /* display: inline-block; */
+    width: 70%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin: 0 auto; /* Center horizontally */
+    margin-bottom: 2rem;
+    display: block;
+    border: 1px solid #ced4da; /* Add a default border color */
+}
+
+#searchInput:focus {
+    outline: none; /* Remove the default focus outline */
+    border-color: #aab2ba; /* Set the border color to blue when focused */
+    box-shadow: 0 0 5px rgba(154, 157, 160, 0.5); /* Optional: Add a box shadow for better visibility */
+}
+
+button {
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+
+    padding: 20px;
+    font-size: 1rem;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#movieContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.movie {
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.movie img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+#pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#pagination button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+}
+
+#pagination button:hover {
+    background-color: #0056b3;
+}
+
+/* #movieDetails {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+} */
+
+
+#movieDetails {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    max-width: 400px; /* Set a max-width if needed */
+    height: auto; /* Adjust height as needed */
+    overflow: auto; /* Allow scrolling if content overflows */
+
+    /* margin-top: 20px; */
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+.poster {
+    width: 100%; /* Ensure image takes full width */
+    /* max-height: 300px;  */
+    aspect-ratio: 1/1;
+    /* object-fit: contain; */
+    margin-bottom: 20px; /* Add some spacing below the image */
+
+}
